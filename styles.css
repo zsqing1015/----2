@@ -1,0 +1,147 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.board {
+    background-color: #eee;
+}
+
+.header {
+    background-color: #ccc;
+}
+
+.header button {
+    background-color: rgb(162, 199, 201);
+    color: coral;
+}
+
+.game-pane {
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.flag {
+    background: #ccc url(../扫雷/flag.png) no-repeat;
+    background-size: cover;
+}
+
+.game-pane a {
+    padding: 5px 15px;
+    background-color: #4ad8eb;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.title {
+    padding: 15px 15px;
+    background-color: #cfabab;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(37, 2, 2);
+    font-family: 仿宋;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.cell {
+    background-color: #ccc;
+    width: 1.5em;
+    height: 1.5em;
+    border-style: outset;
+    text-align: center;
+    user-select: none;
+}
+
+.clear {
+    border-style: solid;
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.cell.landmine {
+    background-color: orange;
+    background: #ccc url(../扫雷/boom.png)no-repeat center;
+    background-size: cover;
+}
+
+.cell.landmine.exploded {
+    background-color: red;
+}
+
+.cell.landmine.success {
+    background-color: green;
+}
+
+.footer {
+    background-color: rgb(201, 223, 233);
+}
+
+td {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: cornflowerblue;
+    ;
+}
+
+.cell.one {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.cell.two {
+    color: rgb(124, 131, 35);
+    font-weight: bold;
+}
+
+.cell.three {
+    color: rgb(255, 124, 16);
+    font-weight: bold;
+}
+
+.cell.four {
+    color: rgb(170, 68, 184);
+    font-weight: bold;
+}
+
+.cell.five {
+    color: rgb(27, 224, 60);
+    font-weight: bold;
+}
+
+.cell.six {
+    color: rgb(236, 161, 171);
+    font-weight: bold;
+}
+
+.cell.seven {
+    color: rgb(158, 230, 26);
+    font-weight: bold;
+}
+
+.cell.eight {
+    color: blue;
+    font-weight: bold;
+}
+
+.btn {
+    align-items: center;
+    color: blueviolet;
+}
